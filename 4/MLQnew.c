@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main()
+int main()
 {
     // qp is Queue Prioriy, cwt is Cummulative Waiting Time, and ctat is Cummulative Turn Around Time
     int pid[20], bt[20], qp[20], wt[20], tat[20], i, k, n, temp;
@@ -82,4 +82,5 @@ void main()
 
     printf("\nAverage Waiting Time is --- %f", cwt / n);
     printf("\nAverage Turnaround Time is --- %f", ctat / n);
+    return 0;
 }

@@ -4,21 +4,18 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
-
-int main(int argc, char *argv[])
-{
-
+int main(int argc, char *argv[]){
     pid_t pid = fork();
-    if (pid == 0)
-    {
+    if (pid == 0)  {
         printf("Child PID: %d \n", (int)getpid());
         execlp(argv[1], "arguments", NULL);
     }
-    else if (pid > 0)
-    {
+    else if (pid > 0) {
         wait(NULL);
         // printf("Parent resumes from there");
         printf("Parent PID: %d \n", (int)getpid());
         execl(argv[2], "some arguments", NULL);
     }
 }
+
+
