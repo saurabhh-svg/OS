@@ -1,6 +1,8 @@
 {
-    "files.associations": {
-        "*.ejs": "html",
-        "random": "c"
-    }
+  "files.associations": {
+    "*.ejs": "html",
+    "random": "c",
+    "chrono": "c",
+    "variant": "c"
+  }
 }

@@ -25,7 +25,7 @@ int main(){
         scanf("%d", &ch);
     } while (ch == 1);
     printf("Directory name is:%s\n", mdname);
-    printf("Files names are:");
+    printf("Files names are: ");
     for (i = 0; i < j; i++)   printf("\n%s", fname[i]);
     return 0;
 }
