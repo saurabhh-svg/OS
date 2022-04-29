@@ -7,7 +7,7 @@ int main()
     bufsize = 10;
     while (choice != 3)
     {
-        printf("1. Produce \t 2. Consume \t3. Exit\n ");
+        printf("1. Produce \t 2. Consume \t3. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
         switch (choice)
