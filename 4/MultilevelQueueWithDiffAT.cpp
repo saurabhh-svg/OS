@@ -6,7 +6,7 @@ int main(){
     cin >> n;
     int AT[n], type[n], BT[n];
     for (int i = 0; i < n; i++){
-        printf("Enter the Arrival time of the process:\t");
+        printf("Enter the Arrival time of the process %d:\t", i+1);
         cin >> AT[i];
         printf("Enter the Burst time of the process: \t");
         cin >> BT[i];
@@ -34,19 +34,14 @@ int main(){
                 index = i;
             }
         }
-
-
-
-
-
-
+        
         if (index != -1) {
             process_done++;
             tym += RQ[3][index];
             ctat = tym - RQ[0][index];
             cwt = ctat - RQ[3][index];
             cout << RQ[2][index] << "\t\t " << RQ[0][index] 
-            << "\t\t " << min << "\t\t " << cwt << "\t\t " << ctat << endl;
+            << "\t\t " << min << "\t\t" << cwt << "\t\t" << ctat << endl;
             RQ[3][index] = -1;
         }
         else if (process_done < count) {
@@ -70,8 +65,3 @@ int main(){
     }
     return 0;
 }
-
-
-
-
-
