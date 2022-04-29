@@ -42,7 +42,7 @@ int main(){
                 }  if (index != -1)  {
                     ctat += min;
                     process_done++;
-                    cout << RQ[2][index] << "\t\t " << min << "\t\t " << cwt << "\t\t " << ctat << endl;
+                    cout << RQ[2][index] << "\t\t" << min << "\t\t" << cwt << "\t\t" << ctat << endl;
                     cwt += RQ[0][index];
                     RQ[0][index] = -1;
                     p = 1;
